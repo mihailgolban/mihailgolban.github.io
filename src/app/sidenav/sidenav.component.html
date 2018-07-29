@@ -1,12 +1,12 @@
 <div id="sidenav" fxLayout="column" fxLayoutAlign="space-between stretch" fxLayoutGap="20x">
 <header fxFlex="none">
-      <a href="/"><img src="../../assets/images/myphoto.png" alt="My photo"></a>
+      <img src="../../assets/images/myphoto.png" alt="My photo">
       <h1>Mihail Golban</h1>
       <p>42 is the meaning of life</p>
 </header>
 <nav fxFlex="none">
   <mat-nav-list>
-      <a mat-list-item href="{{ link.link }}" *ngFor="let link of navLinks"><mat-icon svgIcon="{{ link.icon }}"></mat-icon>{{ link.name }}</a>
+      <a mat-list-item routerLink="{{ link.link }}" *ngFor="let link of navLinks"><mat-icon svgIcon="{{ link.icon }}"></mat-icon>{{ link.name }}</a>
   </mat-nav-list>
 </nav>
 <div fxFlex="1 1 auto"></div>

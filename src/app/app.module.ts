@@ -1,34 +1,35 @@
-import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {CustomMaterialModule} from './material.module';
-import { HttpModule } from '@angular/http';
-import { HttpClientModule } from '@angular/common/http';
-import {MatIconRegistry} from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-
+import { ProjectsComponent } from './projects/projects.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent
+    SidenavComponent,
+    ProjectsComponent,
+    AboutComponent,
+    ContactComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     CustomMaterialModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
-    matIconRegistry.addSvgIconSet(domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/mdi.svg'));
-  }
-}
+export class AppModule {}
