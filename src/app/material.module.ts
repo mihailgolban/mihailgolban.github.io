@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { MatSidenavModule,
          MatListModule,
          MatIconModule,
+         MatSnackBarModule
         } from '@angular/material';
 
 @NgModule({
@@ -12,10 +13,12 @@ import { MatSidenavModule,
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
   ]
 })
 export class CustomMaterialModule {
   constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
     matIconRegistry.addSvgIconSet(domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/mdi.svg'));
+  }
 }
