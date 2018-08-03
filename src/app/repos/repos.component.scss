@@ -1,0 +1,22 @@
+h1 {
+  font-size: 4em;
+  font-weight: 800;
+}
+mat-list {
+  max-width: 1000px;
+  mat-list-item {
+    height: auto;
+    font-family: inherit;
+  }
+  app-repo {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+.spinner {
+  max-width: 1000px;
+  mat-spinner {
+    margin: 50px auto;
+  }
+}
