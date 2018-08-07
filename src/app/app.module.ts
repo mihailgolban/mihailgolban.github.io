@@ -10,8 +10,6 @@ import {CustomMaterialModule} from './material.module';
 
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReposComponent } from './repos/repos.component';
 import { RepoComponent } from './repos/repo/repo.component';
@@ -22,8 +20,6 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     SidenavComponent,
-    AboutComponent,
-    ContactComponent,
     PageNotFoundComponent,
     ReposComponent,
     RepoComponent,
