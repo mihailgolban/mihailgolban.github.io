@@ -14,8 +14,9 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReposComponent } from './repos/repos.component';
-import { RepoDetailsComponent } from './repos/repo-details/repo-details.component';
 import { RepoComponent } from './repos/repo/repo.component';
+import { FilterPipe } from './filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { RepoComponent } from './repos/repo/repo.component';
     PageNotFoundComponent,
     ReposComponent,
     RepoComponent,
-    RepoDetailsComponent
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -34,7 +35,8 @@ import { RepoComponent } from './repos/repo/repo.component';
     FlexLayoutModule,
     CustomMaterialModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ServerService],
   bootstrap: [AppComponent]

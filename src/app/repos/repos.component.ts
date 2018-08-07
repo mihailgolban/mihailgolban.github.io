@@ -10,6 +10,7 @@ import { Component, OnInit} from '@angular/core';
 export class ReposComponent implements OnInit {
   Repositories: Object[];
   loading: boolean;
+  filterString: string;
 
   spinnerColor = 'accent';
 
