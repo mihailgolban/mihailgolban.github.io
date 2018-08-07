@@ -1,22 +1,28 @@
-h1 {
-  font-size: 4em;
-  font-weight: 800;
-}
-mat-list {
+.container {
   max-width: 1000px;
-  mat-list-item {
-    height: auto;
-    font-family: inherit;
+  padding: 0 20px;
+  h1 {
+    font-size: 3.5em;
+    font-weight: 800;
   }
-  app-repo {
+  mat-form-field {
     width: 100%;
-    overflow-x: hidden;
+  }
+  mat-list {
+    width: 100%;
+    mat-list-item {
+      height: auto;
+      font-family: inherit;
+    }
+    app-repo {
+      width: 100%;
+      overflow-x: hidden;
+    }
+  }
+  .spinner {
+    mat-spinner {
+      margin: 50px auto;
+    }
   }
 }
 
-.spinner {
-  max-width: 1000px;
-  mat-spinner {
-    margin: 50px auto;
-  }
-}
