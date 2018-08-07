@@ -5,6 +5,12 @@ import { NgModule } from '@angular/core';
 import { MatSidenavModule,
          MatListModule,
          MatIconModule,
+         MatSnackBarModule,
+         MatFormFieldModule,
+         MatInputModule,
+         MatProgressSpinnerModule,
+         MatButtonModule,
+         MatCardModule
         } from '@angular/material';
 
 @NgModule({
@@ -12,10 +18,17 @@ import { MatSidenavModule,
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatProgressSpinnerModule,
+    MatButtonModule,
+    MatCardModule
   ]
 })
 export class CustomMaterialModule {
   constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer) {
     matIconRegistry.addSvgIconSet(domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/mdi.svg'));
+  }
 }

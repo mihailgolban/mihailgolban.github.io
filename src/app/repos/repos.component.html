@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Projects</h1>
+  <mat-form-field>
+    <input matInput placeholder="Filter" [(ngModel)] = "filterString">
+  </mat-form-field>
+  <div class="spinner" *ngIf="loading">
+    <mat-spinner [color]="spinnerColor"></mat-spinner>
+  </div>
+  <mat-list>
+    <mat-list-item *ngFor="let item of Repositories | filter: filterString"><app-repo [repo]="item"></app-repo></mat-list-item>
+  </mat-list>
+</div>

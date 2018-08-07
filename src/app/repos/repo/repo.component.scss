@@ -1,0 +1,40 @@
+@import 'src/_variables.scss';
+$white: white;
+
+.repo-card {
+  margin: 10px 0;
+  p:first-child {
+    margin-bottom: 0;
+  }
+  .repo-name {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  .repo-date {
+    float: right;
+    line-height: 33px;
+  }
+  .repo-short-description {
+    margin: 0;
+    color: $light-primary-color;
+  }
+  .repo-languages {
+    margin: 10px 10px 10px 0;
+    mat-icon {
+      vertical-align: bottom;
+    }
+  }
+  .repo-source {
+    text-shadow: 0px 0px 2px #000;
+    background-color: $second-accent-color;
+    color: $white;
+    border-radius: 5px;
+    mat-icon {
+      border-radius: 50%;
+      border: 2px solid $white;
+      margin-right: 5px;
+      background-color: black;
+    }
+  }
+}

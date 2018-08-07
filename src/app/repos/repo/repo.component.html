@@ -1,0 +1,13 @@
+<div class="repo-card">
+  <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <div class="repo-name">{{ repo['name'] }}</div>
+    <div class="repo-date">{{ created_at() }}</div>
+  </div>
+  <p class="repo-short-description">{{ repo['description'] }}</p>
+  <div class="repo-footer" fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <div class="repo-languages" fxLayout="row wrap" fxLayoutAlign="start center">
+      <div *ngFor="let language of languages" ><mat-icon [ngStyle]="{'color': language.color }" svgIcon="record"></mat-icon>{{ language.name }}</div>
+    </div>
+    <a class="repo-source" mat-raised-button href="{{ repo['html_url']}}" target="_blank"><mat-icon svgIcon="github-circle"></mat-icon>View on Github</a>
+  </div>
+</div>
