@@ -15,6 +15,7 @@ import { ReposComponent } from './repos/repos.component';
 import { RepoComponent } from './repos/repo/repo.component';
 import { FilterPipe } from './filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     PageNotFoundComponent,
     ReposComponent,
     RepoComponent,
-    FilterPipe
+    FilterPipe,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
