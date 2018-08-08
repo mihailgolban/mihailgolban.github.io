@@ -10,6 +10,7 @@ import { MatSidenavModule,
          MatInputModule,
          MatProgressSpinnerModule,
          MatButtonModule,
+         MatToolbarModule,
         } from '@angular/material';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { MatSidenavModule,
     MatInputModule,
     MatProgressSpinnerModule,
     MatButtonModule,
+    MatToolbarModule
   ]
 })
 export class CustomMaterialModule {

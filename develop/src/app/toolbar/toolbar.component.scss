@@ -1,0 +1,13 @@
+@import "src/_variables.scss";
+
+mat-toolbar {
+    background-color: $dark-primary-color;
+    button {
+        margin-left: auto;
+        min-width: auto;
+        color: white;
+        mat-icon {
+            transform: scale(2);
+        }
+    }
+}

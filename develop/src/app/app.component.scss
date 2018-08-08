@@ -1,7 +1,13 @@
+@import "src/_variables.scss";
+
 .container {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+mat-sidenav {
+  background-color: $dark-primary-color;
 }
